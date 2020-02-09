@@ -6,7 +6,7 @@
   </div>
 
   <!-- 文章目录 -->
-  <%- toc(page.content, {list_number: false}) %>
+  <!-- <%- toc(page.content, {list_number: false}) %> -->
 
   <div class="post-content">
     <%- page.content %>
@@ -28,5 +28,13 @@
 </article>
 
 <!-- 评论插件 -->
+
+<script src="https://utteranc.es/client.js"
+        repo="dexhunter/books.dex.moe"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
 <%- partial('_partial/footer') %>

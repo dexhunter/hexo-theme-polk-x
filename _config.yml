@@ -1,8 +1,8 @@
 # Favicon
-favicon:
+favicon: /favicon.ico
 
 # SEO
-keywords:
+keywords: books
 
 # Site title separator
 separator: '-'
@@ -13,6 +13,5 @@ rss: /atom.xml
 # Nav menu
 menu:
   Home: /
-  Summary: /summary
-  About: /about
+  Github: https://github.com/dexhunter
   RSS: /atom.xml
