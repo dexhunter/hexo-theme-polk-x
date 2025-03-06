@@ -1,0 +1,20 @@
+<%- partial('_partial/header') %>
+
+<article class="tags-container">
+  <div class="post-title">
+    <h1 class="article-title"><%= __('Tags') %></h1>
+  </div>
+  
+  <div class="tag-cloud-tags">
+    <%- tagcloud({
+      min_font: 14, 
+      max_font: 28, 
+      amount: 999, 
+      color: true, 
+      start_color: '#999', 
+      end_color: '#333',
+    }) %>
+  </div>
+</article>
+
+<%- partial('_partial/footer') %> 

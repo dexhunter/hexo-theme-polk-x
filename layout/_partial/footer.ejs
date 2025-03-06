@@ -4,3 +4,13 @@
     <%= config.author || '' %>
   </span>
 </footer>
+
+<!-- PeterCat Assistant Initialization -->
+<script>
+  PetercatLUI.initAssistant({
+    apiDomain: 'https://api.petercat.ai',
+    token: 'baf39b4e-797e-49e7-9745-5ffaad963cc5',
+    starters: ['introduce the website', 'summary', 'recommend a book'],
+    clearMessage: true
+  });
+</script>

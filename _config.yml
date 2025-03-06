@@ -13,5 +13,8 @@ rss: /atom.xml
 # Nav menu
 menu:
   Home: /
+  Tags: /tags/
   Github: https://github.com/dexhunter
   RSS: /atom.xml
+
+per_page: 20
