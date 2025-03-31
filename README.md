@@ -3,7 +3,6 @@
 
 ## Preview
 [My Blog](http://books.dex.moe)
-![preview](https://github.com/dexhunter/hexo-theme-polk-x/blob/master/demo.jpg?raw=true)
 
 ## Install
 
