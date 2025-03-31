@@ -2,14 +2,14 @@
 极简Hexo博客主题, 基于[polk](https://github.com/chunqiuyiyu/hexo-theme-polk)主题修改.
 
 ## Preview
-[My Blog](http://www.leviathan.vip)
-![preview](https://github.com/Leviathan1995/hexo-theme-polk-x/blob/master/demo.jpg?raw=true)
+[My Blog](http://books.dex.moe)
+![preview](https://github.com/dexhunter/hexo-theme-polk-x/blob/master/demo.jpg?raw=true)
 
 ## Install
 
 ```shell
 cd your-blog
-git clone https://github.com/Leviathan1995/hexo-theme-polk-x.git themes/polk-x
+git clone https://github.com/dexhunter/hexo-theme-polk-x.git themes/polk-x
 ```
 
 ### 修改主题

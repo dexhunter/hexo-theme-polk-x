@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 html, body, .container {
@@ -14,8 +16,12 @@ html, body, .container {
 }
 
 a {
-  color: #000;
+  color: var(--link-color);
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover-color);
 }
 
 .home {
@@ -35,7 +41,7 @@ a {
 
     .subtitle {
       font-size: 14px;
-      color: gray;
+      color: var(--gray-color);
     }
 
     .sns {
@@ -43,18 +49,18 @@ a {
 
       a {
         width: 55px;
-        color: #999;
+        color: var(--gray-color);
         display: inline-block;
 
         &:hover {
-          color: #000;
+          color: var(--link-hover-color);
         }
       }
     }
 
     footer {
       border: 0;
-      color: #000;
+      color: var(--text-color);
       padding: 0;
     }
   }
@@ -74,7 +80,7 @@ a {
 /* Tomorrow Comment */
 .highlight .comment,
 .highlight .quote {
-  color: #408090;
+  color: var(--highlight-comment);
 }
 
 /* Tomorrow Red */
@@ -129,8 +135,8 @@ a {
 .highlight {
   display: block;
   overflow-x: auto;
-  background: white;
-  color: #000;
+  background: var(--code-background);
+  color: var(--text-color);
   padding: 0.5em;
 }
 
@@ -148,3 +154,4 @@ a {
 @import "_partial/paginator";
 @import "_partial/footer";
 @import "_partial/tags";
+@import "dark-mode";
