@@ -1,0 +1,50 @@
+// Show the original by default; html[data-lang] swaps in a translation when one exists.
+.i18n > .lang-en,
+.i18n > .lang-zh {
+  display: none;
+}
+
+for lang in en zh {
+  html[data-lang={lang}] .i18n.has-{lang} {
+    > .lang-orig {
+      display: none;
+    }
+    > .lang-{lang} {
+      display: inherit;
+    }
+  }
+}
+
+.lang-toggle {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background-color: var(--background-color);
+  overflow: hidden;
+  z-index: 1000;
+
+  button {
+    width: 40px;
+    height: 32px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--gray-color);
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--text-color);
+    }
+
+    &[aria-pressed="true"] {
+      color: var(--background-color);
+      background-color: var(--text-color);
+    }
+  }
+}

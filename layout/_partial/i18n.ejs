@@ -1,0 +1,16 @@
+<%
+  // Renders the original plus any pre-translated versions; source/js/i18n.js picks one to show.
+  var t = post_i18n(post);
+  var tag = field === 'content' ? 'div' : 'span';
+  var html = function(v, fallback) {
+    return field === 'content' ? v.content : escape_html(v.title || fallback);
+  };
+  var out = '<' + tag + ' class="lang-orig">' + html(post, '') + '</' + tag + '>';
+  var cls = 'i18n';
+  ['en', 'zh'].forEach(function(lang) {
+    if (!t[lang]) return;
+    cls += ' has-' + lang;
+    out += '<' + tag + ' class="lang-' + lang + '" lang="' + (lang === 'zh' ? 'zh-CN' : 'en') + '">' + html(t[lang], post.title) + '</' + tag + '>';
+  });
+-%>
+<<%= tag %> class="<%= cls %>"><%- out %></<%= tag %>>

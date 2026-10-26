@@ -60,4 +60,12 @@
     }
   </script>
   <script src="<%- url_for('/js/dark-mode.js') %>"></script>
+  <script>
+    // Apply saved language before paint to avoid a flash of the original text
+    try {
+      var savedLang = localStorage.getItem('lang');
+      if (savedLang === 'en' || savedLang === 'zh') document.documentElement.setAttribute('data-lang', savedLang);
+    } catch (e) {}
+  </script>
+  <script src="<%- url_for('/js/i18n.js') %>" defer></script>
 </head>
